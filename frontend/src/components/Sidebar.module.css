@@ -1,0 +1,72 @@
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: var(--background);
+  padding: 20px;
+  box-shadow: 4px 0 10px rgba(0,0,0,0.15); /* slightly stronger shadow */
+  flex-shrink: 0; /* prevent shrinking */
+  display: flex;
+  flex-direction: column;
+  z-index: 10; /* ensures shadow stays above content */
+}
+
+.logo {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.section {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #d9eaff;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  padding-top: 10px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* apply hover and active directly to the <a> element */
+.menuButton {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 1rem;
+  color: var(--primary);
+  border-radius: 8px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.menuButton:hover {
+  background-color: var(--primary); /* subtle hover blue */
+  text-decoration: none;
+  color: var(--background);
+}
+
+.menuButtonActive {
+  background-color: var(--primary); /* highlight blue */
+  font-weight: 600;
+  color: var(--background);
+}
+
+.icon {
+  font-size: 1.2rem;
+}
+
+.label {
+  flex: 1;
+}

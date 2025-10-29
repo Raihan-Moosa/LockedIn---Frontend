@@ -1,0 +1,454 @@
+/* profile.module.css */
+
+.profileHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.profileHeader h1 {
+  margin: 0;
+  color: var(--primary);
+}
+
+.editButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.editButton:hover {
+  background: var(--accent);
+  transform: translateY(-1px);
+}
+
+/* UPDATED: Change to grid layout for 2-column design */
+.profileContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* UPDATED: Make sections more compact for side-by-side layout */
+.profileSection {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(42, 58, 74, 0.1);
+  height: fit-content;
+  min-height: 300px;
+}
+
+.profileSection h2 {
+  color: var(--primary);
+  margin: 0 0 1.5rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--background);
+  text-align: left;
+  font-size: 1.25rem;
+}
+
+/* UPDATED: Make avatar section more compact */
+.avatarSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  gap: 0.75rem;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.uploadButton {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.uploadButton:hover {
+  background: var(--accent);
+}
+
+/* UPDATED: Adjust grid for compact layout */
+.fieldsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.field label {
+  font-weight: 600;
+  color: var(--foreground);
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.fieldValue {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 10px 12px;
+  background: var(--background);
+  border: 1px solid rgba(160, 170, 191, 0.3);
+  border-radius: 8px;
+  color: var(--foreground);
+  min-height: 44px;
+  font-size: 0.9rem;
+}
+
+.fieldValue svg {
+  color: var(--primary);
+  flex-shrink: 0;
+  font-size: 0.9rem;
+}
+
+.modulesList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 10px 12px;
+  background: var(--background);
+  border: 1px solid rgba(160, 170, 191, 0.3);
+  border-radius: 8px;
+  min-height: 44px;
+  align-items: center;
+}
+
+.moduleTag {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--secondary);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.moduleTag svg {
+  color: white;
+  font-size: 0.8rem;
+}
+
+.noData {
+  color: var(--muted);
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.errorMessage {
+  background: #ffebee;
+  color: var(--error);
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border-left: 4px solid var(--error);
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+/* Modal Styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modalContent {
+  background: white;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 900px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid var(--background);
+}
+
+.modalHeader h2 {
+  margin: 0;
+  color: var(--primary);
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.closeButton:hover {
+  background: var(--background);
+  color: var(--error);
+}
+
+.editForm {
+  padding: 2rem;
+  margin: 0;
+  box-shadow: none;
+  background: none;
+}
+
+.formSection {
+  margin-bottom: 2rem;
+}
+
+.formSection h3 {
+  color: var(--primary);
+  margin: 0 0 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--background);
+  font-size: 1.1rem;
+}
+
+.formField {
+  margin-bottom: 1rem;
+}
+
+.formField label {
+  display: block;
+  font-weight: 600;
+  color: var(--foreground);
+  margin-bottom: 0.5rem;
+}
+
+.formField input,
+.formField select,
+.formField textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1.5px solid var(--muted);
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: var(--font-family);
+  margin: 0;
+}
+
+.formField input:focus,
+.formField select:focus,
+.formField textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(0, 122, 204, 0.1);
+}
+
+.errorInput {
+  border-color: var(--error) !important;
+  box-shadow: 0 0 0 3px rgba(229, 83, 83, 0.1) !important;
+}
+
+.errorText {
+  color: var(--error);
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+  display: block;
+}
+
+.addButton {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.addButton:hover {
+  background: var(--accent);
+}
+
+.removeButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: var(--error);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.removeButton:hover {
+  background: #c82333;
+}
+
+.modalActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--background);
+}
+
+.cancelButton {
+  background: none;
+  color: var(--muted);
+  border: 1.5px solid var(--muted);
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.cancelButton:hover {
+  background: var(--muted);
+  color: white;
+}
+
+.submitButton {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.submitButton:hover {
+  background: var(--accent);
+}
+
+.submitButton:disabled {
+  background: var(--muted);
+  cursor: not-allowed;
+}
+
+/* UPDATED: Responsive Design */
+@media (max-width: 1024px) {
+  .profileContainer {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .profileContainer {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+  }
+  
+  .profileSection {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .profileHeader {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+  }
+
+  .profileContainer {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .fieldsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .modalContent {
+    margin: 10px;
+    max-height: calc(100vh - 20px);
+  }
+
+  .editForm {
+    padding: 1rem;
+  }
+
+  .modalActions {
+    flex-direction: column;
+  }
+  
+  .profileSection {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .profileSection {
+    padding: 1rem;
+  }
+
+  .modalHeader {
+    padding: 1rem;
+  }
+  
+  .profileContainer {
+    grid-template-columns: 1fr;
+  }
+}

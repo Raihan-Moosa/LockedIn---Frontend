@@ -1,0 +1,31 @@
+name: Run Unit Tests
+
+on:
+  push:
+    branches:
+      - Dev
+  pull_request:
+    branches:
+      - Dev
+
+jobs:
+  test-frontend:
+    runs-on: ubuntu-latest
+    name: Frontend Tests
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18.x'
+
+      - name: Install frontend dependencies
+        working-directory: ./frontend
+        run: npm install
+
+      - name: Run frontend tests
+        working-directory: ./frontend
+        run: npm run test:coverage
+        continue-on-error: true

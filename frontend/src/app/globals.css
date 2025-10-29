@@ -1,0 +1,335 @@
+/* Educational-themed global styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+
+:root {
+  /* Color Palette */
+  --background: #f0f7fa;        /* Light soft blue */
+  --foreground: #2a3a4a;        /* Dark slate for text */
+  --primary: #007acc;           /* Calming blue */
+  --secondary: #4caf50;         /* Fresh green */
+  --accent: #ffb400;            /* Warm yellow */
+  --muted: #a0aabf;             /* Muted grayish */
+  --error: #e55353;             /* Soft red for errors */
+  --success: #4caf50;           /* Success green */
+
+  /* Fonts */
+  --font-family: 'Nunito', Arial, Helvetica, sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Basic Reset */
+* {
+  box-sizing: border-box;
+}
+
+/* Links */
+a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+/* Buttons */
+button {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 122, 204, 0.4);
+}
+
+button:hover {
+  background-color: var(--accent);
+  box-shadow: 0 4px 10px rgba(255, 180, 0, 0.7);
+}
+
+button::after {
+  content: "";
+  position: absolute;
+  left: -50%;
+  top: 0;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transform: skewX(-25deg);
+  transition: all 0.7s ease;
+}
+
+button:hover::after {
+  left: 100%;
+}
+
+/* Outline button style */
+.btn-outline {
+  background-color: transparent;
+  color: var(--primary);
+  border: 1.5px solid var(--primary);
+  box-shadow: none;
+}
+
+.btn-outline:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+/* Inputs */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 18px;
+  border: 1.5px solid var(--muted);
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: var(--font-family);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 8px var(--primary);
+}
+
+/* Labels */
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--foreground);
+  font-size: 1rem;
+}
+
+/* Form container */
+form {
+  background-color: white;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(42, 58, 74, 0.15);
+  max-width: 400px;
+  margin: 40px auto;
+}
+
+.form-container {
+  background-color: white;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(42, 58, 74, 0.15);
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: var(--primary);
+  text-align: center;
+  font-family: var(--font-family);
+}
+
+/* Helper texts */
+small {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: -12px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+/* Success & error messages */
+.success {
+  color: var(--success);
+}
+
+.error {
+  color: var(--error);
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+/* Add some playful subtle animation to buttons */
+button {
+  position: relative;
+  overflow: hidden;
+}
+
+button::after {
+  content: "";
+  position: absolute;
+  left: -50%;
+  top: 0;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transform: skewX(-25deg);
+  transition: all 0.7s ease;
+}
+
+button:hover::after {
+  left: 100%;
+}
+
+/* Responsive for small devices */
+@media (max-width: 480px) {
+  form {
+    margin: 20px 15px;
+    padding: 24px;
+  }
+}
+
+
+/* Dashboard layout with sidebar */
+.dashboardLayout {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Main content next to sidebar */
+.dashboardContent {
+  flex: 1;
+  padding: 2rem;
+  background: var(--background);
+  overflow-y: auto;
+
+  /* Remove vertical centering caused by margin auto on wrapper */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;  /* full width */
+  justify-content: flex-start; /* start from top */
+}
+
+/* Dashboard wrapper centered horizontally but not vertically */
+.dashboard-wrapper {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto; /* horizontally center only */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Cards grid inside dashboard sections */
+.dashboard-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(42, 58, 74, 0.1);
+}
+
+
+
+.study-time-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.card {
+  background-color: var(--background);
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid var(--muted);
+}
+
+.card .label {
+  display: block;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.card .value {
+  font-size: 1.4rem;
+  color: var(--foreground);
+}
+
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--background);
+  margin-bottom: 8px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--muted);
+}
+
+.date {
+  color: var(--muted);
+}
+
+.friends-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+}
+
+.friend-item {
+  background-color: var(--secondary);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+

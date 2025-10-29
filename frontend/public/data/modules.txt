@@ -1,0 +1,220 @@
+Abstract Algebra
+Administrative Law
+Anatomy
+Anatomy & Physiology
+Anatomy of Head & Neck
+Animal Physiology
+Applied Linear Algebra
+Biochemistry
+Biochemistry I / II
+Biochemistry and Cell Biology
+Biomechanics
+Biomaterials
+Bioprocessing
+Biostatistics
+Biotechnology
+Building Materials & Construction
+Building Technology
+Business Enterprise Law
+Business Ethics
+Business Law
+Business Process Modelling
+Business Statistics I
+Calculus
+Cartography
+Cell Biology
+Chemistry
+Chemistry with Chemical Engineering
+Clinical Pharmacy
+Clinical Practice & Procedures
+Clinical Rotations
+Commercial Law I
+Comparative Anatomy
+Complex Analysis
+Computational Astrophysics
+Computational Biology
+Computational Mathematics I
+Computer-Aided Design / CAD
+Computer Graphics
+Computer Networks
+Construction Management
+Construction Methods
+Conservation Biology
+Constitutional Law
+Contract Law
+Control Systems
+Corporate Finance
+Corporate Law
+Cosmology
+Cost Estimation
+Cultural Archaeology
+Data Analytics
+Data Mining in Biology
+Data Structures & Algorithms
+Database Systems
+Databases
+Delict / Tort Law
+Dental Materials
+Design Project
+Design Studio
+Development Economics
+Developmental Biology
+Differential Equations
+Digital Image Processing
+Ecology
+Econometrics
+Economics IA (Microeconomics)
+Economics IB (Macroeconomics)
+Electrical Circuits / Electronics
+Electromagnetism
+Environmental Planning
+Environmental Systems / Climate & Lighting
+Epidemiology
+Ethics / Philosophy
+Evidence & Procedure
+Exercise Physiology
+Evolution
+Financial Accounting I
+Financial Accounting II
+Financial Accounting III
+Financial Engineering
+Financial Mathematics
+Fluid Mechanics
+Foundations of Public Health & Health Systems Science
+Fundamentals of Health Systems Sciences
+Fundamentals of Information Systems
+Game Theory
+General Chemistry
+Genetic Engineering
+Genetics
+Genetics and Development Biology
+Geographic Information Systems (GIS)
+Geological Science
+Habitat Restoration
+Health Management
+Health Policy
+Health Systems Sciences
+Human Geography
+Information Systems Audit
+Information Systems / Accounting Information Systems
+Integrated Sciences for Medical Students
+Interactive Media
+International Economics
+International Law
+Investment & Portfolio Theory
+Introduction to Health Systems
+Introduction to Information Systems
+Introduction to Medical Sciences
+Kinesiology
+Labour Economics
+Labour Law
+Landscape / Urban Design
+Legal Ethics
+Legal Writing
+Linear Algebra
+Logic / Critical Thinking
+Management Accounting & Finance II
+Management Accounting III
+Management Accounting II
+Materials Characterization
+Materials Science
+Mathematical Economics
+Mathematical Modeling
+Mathematical Sciences
+Mathematics I / II
+Mechanics (Classical)
+Medicinal Chemistry
+Medicine (Clinical)
+Metabolism
+Metallurgy
+Microbial Physiology
+Microbiology
+Microbiology and Biotechnology
+Microeconomic Theory
+Molecular Biology
+Molecular Genetics
+Molecular Medicine
+Motor Control
+Multimedia Systems
+Nanomaterials
+Neuroscience
+Neurorehabilitation
+Numerical Analysis
+Occupational Assessment
+Operating Systems
+Optimization
+Oral Biology
+Organic Chemistry
+Organismal Biology
+Orthodontics
+Pathology
+Pathophysiology
+Pediatrics (Clinical)
+Petrology
+Pharmaceutics
+Pharmacokinetics
+Pharmacology
+Pharmacy Practice
+Philosophy / Ethics
+Physical Chemistry
+Physical Geography
+Physical Science
+Physiology
+Physics I / II
+Plant Biology
+Polymers
+Political Economy
+Political Institutions
+Political Theory
+Population Biology
+Process Control
+Process Engineering
+Project Management
+Property Law
+Property Management
+Psychology / Mental Health
+Public Finance
+Public Health
+Public Policy
+Quantum Mechanics
+Real Analysis
+Real Estate Development
+Real Estate Finance
+Rehabilitation Methods
+Remote Sensing
+Restorative Dentistry
+Risk Management
+Risk Theory
+Scientific Computing
+Sequence Analysis
+Signal Processing
+Signals & Systems
+Software Engineering
+Solid State Physics
+Spatial Analysis
+Speech & Language Pathology
+Sports Science
+Stellar Astrophysics
+Statistical Methods
+Statistical Modeling
+Statistics
+Stochastic Processes
+Strategic Management
+Structural Analysis
+Structural Geology
+Structural Systems
+Systems Analysis & Design
+Taxation II
+Taxation III
+Thermodynamics
+Theory of Computation
+Topography & Cartography
+Topology
+Transportation Planning
+Urban Design
+Urban Economics
+Urban Theory
+Valuation (Property)
+Visual Computing
+Welfare Economics
+Zoology
